@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_jokes"
+        android:icon="@drawable/ic_baseline_emoji_emotions_24"
+        android:title="@string/jokes" />
+    <item
+        android:id="@+id/nav_web"
+        android:icon="@drawable/ic_baseline_web_24"
+        android:title="@string/web" />
+
+</menu>
