@@ -26,8 +26,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigation.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.nav_jokes -> replaceFragment(jokesFragment)
-                R.id.nav_web -> replaceFragment(webFragment)
+                R.id.nav_jokes -> {
+                    title = "Jokes"
+                    replaceFragment(jokesFragment)
+                }
+
+                R.id.nav_web -> {
+                    title = "Api info"
+                    replaceFragment(webFragment)
+                }
             }
             true
         }

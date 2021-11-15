@@ -2,13 +2,10 @@ package com.hfad.jokes.ui
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -29,7 +26,8 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
 
     private val api = buildApiService()
     private var listJokes: ArrayList<String> = ArrayList()
-    private lateinit var binding: FragmentJokesBinding
+    private var _binding: FragmentJokesBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,7 +35,7 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
         savedInstanceState: Bundle?
     ): View {
 
-        binding = FragmentJokesBinding.inflate(inflater, container, false)
+        _binding = FragmentJokesBinding.inflate(inflater, container, false)
         return binding.root
     }
 
