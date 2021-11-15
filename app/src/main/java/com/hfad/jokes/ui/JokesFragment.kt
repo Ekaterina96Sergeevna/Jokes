@@ -26,6 +26,7 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
     companion object {
         const val SAVE_LIST = "SAVE_LIST"
     }
+
     private val api = buildApiService()
     private var listJokes: ArrayList<String> = ArrayList()
     private lateinit var binding: FragmentJokesBinding
@@ -48,10 +49,12 @@ class JokesFragment : Fragment(R.layout.fragment_jokes) {
         }
 
         binding.button.setOnClickListener {
-            fetchJokes(binding.number.text.toString().toInt())
             val imm: InputMethodManager =
                 activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.windowToken, 0)
+
+            fetchJokes(binding.number.text.toString().toInt())
+
         }
     }
 
