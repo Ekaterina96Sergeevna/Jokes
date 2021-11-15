@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/drawable/ic_baseline_web_24.xml" value="0.2703125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/layout/fragment_jokes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/layout/item_joke.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Jokes/app/src/main/res/menu/menu_bottom.xml" value="0.25416666666666665" />
       </map>
     </option>
